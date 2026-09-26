@@ -9,130 +9,58 @@
 <meta property="og:description" content="A private AI assistant that understands your company. Connected securely to your ERP, CRM, accounting, documents and email.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tavien.ai">
+<meta property="og:image" content="https://tavien.ai/assets/og-image.png">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Tavien — Ask your business anything">
 <meta property="twitter:description" content="A private AI assistant that understands your company. Connected securely to your ERP, CRM, accounting, documents and email.">
+<meta property="twitter:image" content="https://tavien.ai/assets/og-image.png">
 <link rel="canonical" href="https://tavien.ai">
-<meta name="theme-color" content="#08090A">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Crect width='22' height='22' rx='6' fill='%2308090A'/%3E%3Crect x='1' y='1' width='20' height='20' rx='6' fill='none' stroke='%23F7F8F8' stroke-width='1.6'/%3E%3Cpath d='M6.5 7.5h9M11 7.5v8' stroke='%23F7F8F8' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#050A1C">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#08090A;font-family:'Inter',system-ui,sans-serif;color:#F7F8F8;-webkit-font-smoothing:antialiased}
-a{color:#F7F8F8;text-decoration:none}a:hover{color:#FFFFFF}
-@media (prefers-reduced-motion: no-preference){
-@keyframes tvIn{from{opacity:0;transform:translateY(28px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
-.tv-h1,.tv-h2,.tv-h3,.tv-h4{animation:tvIn .9s cubic-bezier(.2,.7,.2,1) both}
-.tv-h2{animation-delay:.12s}.tv-h3{animation-delay:.24s}.tv-h4{animation-delay:.36s}
-.rv{opacity:0;transform:translateY(48px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
-.rv.in{opacity:1;transform:none}
-.rv2{opacity:0;transform:translateY(48px);transition:opacity .8s cubic-bezier(.2,.7,.2,1) .1s,transform .8s cubic-bezier(.2,.7,.2,1) .1s}
-.rv2.in{opacity:1;transform:none}
-.tilt{opacity:.4;transform:perspective(1600px) rotateX(14deg) scale(.94);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
-.tilt.in{opacity:1;transform:perspective(1600px) rotateX(0) scale(1)}
-.line{transform-origin:left center;transform:scaleX(0);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
-.line.in{transform:scaleX(1)}
-.glow{opacity:0;transition:opacity 1.1s ease}
-.glow.in{opacity:1}
-}
-</style>
-<noscript><style>.rv,.rv2,.tilt,.line,.glow{opacity:1!important;transform:none!important}</style></noscript>
-
-<style>
-html{scroll-behavior:smooth}
-*,*::before,*::after{box-sizing:border-box}
-a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #5E6AD2;outline-offset:3px;border-radius:6px}
-.fld{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:500;color:#8A8F98}
-.fld input,.fld textarea{font:inherit;font-size:16px;color:#F7F8F8;background:#0F1011;border:1px solid #26282D;border-radius:10px;padding:13px 14px;resize:vertical}
-.fld input:focus,.fld textarea:focus{border-color:#5E6AD2;outline:none}
-#scrollbar{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#5E6AD2,#8B93E8);z-index:60;transition:width .08s linear}
-header nav a{position:relative;padding-bottom:4px}
-header nav a::after{content:'';position:absolute;left:0;right:100%;bottom:-1px;height:1.5px;background:#5E6AD2;transition:right .25s cubic-bezier(.2,.7,.2,1)}
-header nav a:hover{color:#F7F8F8}
-header nav a:hover::after,header nav a.active::after{right:0}
-header nav a.active{color:#F7F8F8}
-[style*="background: #F7F8F8"]{transition:transform .2s cubic-bezier(.2,.7,.2,1),box-shadow .2s ease}
-[style*="background: #F7F8F8"]:hover{transform:translateY(-2px);box-shadow:0 12px 28px -10px rgba(247,248,248,.3)}
-[style*="background: #F7F8F8"]:active{transform:translateY(0)}
-[style*="background: #0B0C0D"]{transition:transform .3s cubic-bezier(.2,.7,.2,1),border-color .3s ease,box-shadow .3s ease}
-[style*="background: #0B0C0D"]:hover{transform:translateY(-6px);border-color:#3D4160!important;box-shadow:0 24px 48px -28px rgba(94,106,210,.45)}
-.hair>div{transition:transform .3s cubic-bezier(.2,.7,.2,1),background .3s ease}
-.hair>div:hover{transform:translateY(-4px);background:#0B0C0D}
-.mock{isolation:isolate}
-.mock::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s ease;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(94,106,210,.16),transparent 70%)}
-.mock:hover::after{opacity:1}
-.hamburger{display:none;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;border:1px solid #26282D;background:transparent;cursor:pointer;flex-direction:column;gap:4px}
-.hamburger span{display:block;width:16px;height:1.5px;background:#F7F8F8;transition:transform .25s ease,opacity .25s ease}
-.hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
-.hamburger[aria-expanded="true"] span:nth-child(2){opacity:0}
-.hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
-.mobile-nav{display:none;flex-direction:column;gap:2px;padding:8px 20px 20px;border-bottom:1px solid #16171A;background:#08090A;position:relative;z-index:2}
-.mobile-nav a{padding:12px 4px;font-size:15px;color:#D0D6E0;border-bottom:1px solid #16171A}
-.mobile-nav a:last-child{border-bottom:0}
-.mobile-nav.open{display:flex}
-@media (min-width:761px){.hamburger{display:none!important}.mobile-nav{display:none!important}}
-@media (max-width:1100px){
- header{padding:0 40px!important}
- header nav{gap:18px!important}
- section{padding-left:40px!important;padding-right:40px!important}
- footer{padding-left:40px!important;padding-right:40px!important}
- [style*="repeat(4, minmax(0, 1fr))"],[style*="repeat(5, minmax(0, 1fr))"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
- .mock>div{grid-template-columns:220px minmax(0,1fr)!important}
- .mock>div>div:last-child{display:none!important}
- h1{font-size:84px!important}
-}
-@media (max-width:760px){
- header{padding:0 20px!important}
- header nav,header a[href="#contact"]:not([style*="background"]){display:none!important}
- .hamburger{display:flex!important}
- section{padding-left:20px!important;padding-right:20px!important;padding-top:96px!important}
- #security{padding-top:88px!important;padding-bottom:88px!important;margin-top:96px!important}
- #contact{padding-top:88px!important;padding-bottom:88px!important;margin-top:96px!important}
- footer{padding:48px 20px!important;grid-template-columns:repeat(2,minmax(0,1fr))!important}
- footer>div:first-child{grid-column:1/-1}
- [style*="grid-template-columns"]:not(footer):not(.hair):not(.contact-form){grid-template-columns:minmax(0,1fr)!important;gap:36px!important}
- .hair{grid-template-columns:minmax(0,1fr)!important}
- .contact-form{grid-template-columns:minmax(0,1fr)!important}
- h1{font-size:52px!important;letter-spacing:-2px!important}
- h2{font-size:36px!important;letter-spacing:-1.2px!important;line-height:1.1!important}
- .big{font-size:26px!important;letter-spacing:-0.6px!important}
- #top{padding-top:72px!important}
- .mock{height:auto!important;margin-top:40px!important}
- .mock>div{grid-template-columns:minmax(0,1fr)!important}
- .mock>div>div:first-child{display:none!important}
- .mock>div>div:nth-child(2){padding:20px!important}
- .flow{flex-wrap:wrap;justify-content:flex-start!important;gap:10px;padding:24px!important}
- .flow .line{display:none}
- [style*="justify-content: space-between"]{flex-wrap:wrap}
- [style*="font-size: 72px"]{font-size:40px!important;letter-spacing:-1.4px!important}
- [style*="font-size: 60px"],[style*="font-size: 56px"]{font-size:36px!important}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script>document.documentElement.className+=' js'</script>
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 <div id="scrollbar"></div>
-<div style="width: 100%; max-width: 1440px; margin: 0 auto; min-height: 100vh; box-sizing: border-box; background: #08090A; display: flex; flex-direction: column; font-family: 'Inter', system-ui, sans-serif; color: #F7F8F8; overflow: hidden; position: relative">
+
+<!-- Brand mark: three connected layers. Reuse anywhere with <svg><use href="#tv-mark"/></svg> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<linearGradient id="gT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2DE1E6"/><stop offset="1" stop-color="#3FA9F5"/></linearGradient>
+<linearGradient id="gM" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2F8CF7"/><stop offset="1" stop-color="#5B6CF6"/></linearGradient>
+<linearGradient id="gB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4C4FD6"/><stop offset="1" stop-color="#2E2A8E"/></linearGradient>
+<symbol id="tv-mark" viewBox="0 0 64 64">
+<g stroke-width="8" stroke-linejoin="round">
+<path d="M32 36 L54 46 L32 56 L10 46 Z" fill="url(#gB)" stroke="url(#gB)"/>
+<path d="M32 24 L54 34 L32 44 L10 34 Z" fill="url(#gM)" stroke="url(#gM)"/>
+<path d="M32 12 L54 22 L32 32 L10 22 Z" fill="url(#gT)" stroke="url(#gT)"/>
+</g>
+</symbol>
+</defs>
+</svg>
 
 <!-- NAV -->
-<header style="display: flex; align-items: center; justify-content: space-between; height: 72px; padding: 0 120px; border-bottom: 1px solid #16171A; position: relative; z-index: 2">
-<div style="display: flex; align-items: center; gap: 48px">
-<a href="#top" style="display: flex; align-items: center; gap: 10px">
-<svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><rect x="1" y="1" width="20" height="20" rx="6" stroke="#F7F8F8" stroke-width="1.6"></rect><path d="M6.5 7.5h9M11 7.5v8" stroke="#F7F8F8" stroke-width="1.8" stroke-linecap="round"></path></svg>
-<span style="font-weight: 600; font-size: 17px; letter-spacing: -0.3px">Tavien</span>
-</a>
-<nav style="display: flex; gap: 28px; font-size: 14px">
-<a href="#executives" style="color: #8A8F98">Executives</a>
-<a href="#intelligence" style="color: #8A8F98">Intelligence</a>
-<a href="#automation" style="color: #8A8F98">Automation</a>
-<a href="#security" style="color: #8A8F98">Security</a>
-<a href="#how" style="color: #8A8F98">How it works</a>
+<header class="site-header">
+<div class="wrap">
+<div class="hd-left">
+<a href="#top" class="brand" aria-label="Tavien"><svg aria-hidden="true"><use href="#tv-mark"/></svg>Tavien</a>
+<nav class="nav" aria-label="Main">
+<a href="#executives">Executives</a>
+<a href="#intelligence">Intelligence</a>
+<a href="#automation">Automation</a>
+<a href="#security">Security</a>
+<a href="#how">How it works</a>
 </nav>
 </div>
-<div style="display: flex; align-items: center; gap: 16px; font-size: 14px">
-<a href="#contact" style="color: #8A8F98">Talk to us</a>
-<a href="#contact" style="padding: 9px 16px; border-radius: 8px; background: #F7F8F8; color: #08090A; font-weight: 500">Build your Tavien</a>
+<div class="hd-right">
+<a href="#contact" class="hd-link">Talk to us</a>
+<a href="#contact" class="btn btn-light btn-sm hide-sm">Build your Tavien</a>
 <button type="button" class="hamburger" id="navToggle" aria-expanded="false" aria-label="Open menu" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+</div>
 </div>
 </header>
 <nav id="mobileNav" class="mobile-nav" aria-label="Mobile">
@@ -144,420 +72,340 @@ header nav a.active{color:#F7F8F8}
 <a href="#contact">Talk to us</a>
 </nav>
 
-<!-- HERO -->
-<section id="top" style="position: relative; padding: 128px 120px 0; display: flex; flex-direction: column; gap: 28px">
-<div style="position: absolute; left: 50%; top: 420px; width: 1400px; height: 760px; margin-left: -700px; border-radius: 50%; background: radial-gradient(closest-side, rgba(94,106,210,0.24), rgba(94,106,210,0) 70%)"></div>
-<h1 class="tv-h1" style="margin: 0; font-size: 104px; font-weight: 600; line-height: 0.98; letter-spacing: -4.5px; position: relative">Ask your business<br>anything.</h1>
-<p class="tv-h2" style="margin: 0; max-width: 640px; font-size: 20px; line-height: 1.5; color: #8A8F98; position: relative">Tavien gives executives and teams a private AI assistant that understands their company, connects securely to their systems and helps them get work done. Without giving unrestricted access to your business.</p>
-<div class="tv-h3" style="display: flex; flex-direction: column; gap: 8px; position: relative"><span style="font-size: 16px; color: rgb(98, 102, 109)">Your ERP. Your documents. Your emails. Your CRM. Your calendar. Your company data.</span><span style="font-size: 16px; font-weight: 500; color: rgb(208, 214, 224)">AI assistants that understand it all with no direct access to your data.</span></div>
-<div class="tv-h4" style="display: flex; gap: 16px; align-items: center; position: relative">
-<a href="#contact" style="padding: 13px 22px; border-radius: 10px; background: #F7F8F8; color: #08090A; font-weight: 500; font-size: 16px">Build your Tavien</a>
-<a href="#how" style="display: flex; align-items: center; gap: 8px; padding: 13px 8px; color: #D0D6E0; font-weight: 500; font-size: 16px">See how it works <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D0D6E0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a>
+<main>
+<!-- 1 HERO -->
+<section id="top" class="hero">
+<div class="hero-bg"></div>
+<div class="wrap">
+<div class="hero-mark" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#tv-mark"/></svg></div>
+<div class="stack g28" style="position:relative">
+<h1 class="h-in">Ask your business<br><span class="grad-text">anything.</span></h1>
+<p class="hero-sub h-in" style="--d:.12s">Tavien gives executives and teams a private AI assistant that understands their company, connects securely to their systems and helps them get work done. Without giving unrestricted access to your business.</p>
+<div class="hero-list h-in" style="--d:.24s"><span>Your ERP. Your documents. Your emails. Your CRM. Your calendar. Your company data.</span><span>AI assistants that understand it all with no direct access to your data.</span></div>
+<div class="hero-cta h-in" style="--d:.36s">
+<a href="#contact" class="btn btn-light">Build your Tavien</a>
+<a href="#how" class="btn btn-ghost">See how it works <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+</div>
 </div>
 
 <!-- Product mock -->
-<div class="tilt mock" aria-hidden="true" style="position: relative; margin-top: 64px; width: 100%; max-width: 1200px; height: 620px; border-radius: 16px; border: 1px solid #23252A; background: #0F1011; overflow: hidden; box-shadow: 0 50px 120px -40px rgba(94,106,210,0.4)">
-<div style="display: grid; grid-template-columns: 240px minmax(0, 1fr) 330px; height: 100%">
-<div style="border-right: 1px solid #1C1D21; padding: 18px 14px; display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: #8A8F98">
-<div style="display: flex; align-items: center; gap: 10px; padding: 6px 8px 16px; color: #F7F8F8; font-weight: 500"><span style="width: 20px; height: 20px; border-radius: 6px; background: #5E6AD2"></span>Owner · CEO</div>
-<span style="padding: 7px 8px; border-radius: 6px; background: #1A1B1F; color: #F7F8F8">Today</span>
-<span style="padding: 7px 8px">Briefings</span>
-<span style="padding: 7px 8px">Approvals</span>
-<span style="padding: 7px 8px">Meetings</span>
-<span style="padding: 16px 8px 6px; font-size: 11px; font-weight: 500; letter-spacing: 0.6px; text-transform: uppercase; color: #62666D">Connected</span>
-<span style="padding: 7px 8px; display: flex; justify-content: space-between">ERP<span style="color: #4CB782">●</span></span>
-<span style="padding: 7px 8px; display: flex; justify-content: space-between">CRM<span style="color: #4CB782">●</span></span>
-<span style="padding: 7px 8px; display: flex; justify-content: space-between">Accounting<span style="color: #4CB782">●</span></span>
-<span style="padding: 7px 8px; display: flex; justify-content: space-between">Email &amp; calendar<span style="color: #4CB782">●</span></span>
-<span style="padding: 7px 8px; display: flex; justify-content: space-between">Documents<span style="color: #4CB782">●</span></span>
-<span style="margin-top: auto; padding: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #62666D">read-only · audited</span>
+<div class="mock rv tilt" aria-hidden="true">
+<div class="mock-bar"><i></i><i></i><i></i></div>
+<div class="mock-body">
+<div class="m-side">
+<div class="who"><i></i>Owner · CEO</div>
+<span class="it on">Today</span>
+<span class="it">Briefings</span>
+<span class="it">Approvals</span>
+<span class="it">Meetings</span>
+<span class="lbl">Connected</span>
+<span class="it">ERP<span class="ok">●</span></span>
+<span class="it">CRM<span class="ok">●</span></span>
+<span class="it">Accounting<span class="ok">●</span></span>
+<span class="it">Email &amp; calendar<span class="ok">●</span></span>
+<span class="it">Documents<span class="ok">●</span></span>
+<span class="foot">read-only · audited</span>
 </div>
-<div style="padding: 28px 32px; display: flex; flex-direction: column; gap: 20px">
-<div style="align-self: flex-end; padding: 11px 15px; border-radius: 12px; background: #1A1B1F; border: 1px solid #26282D; font-size: 14px">What should I focus on today?</div>
-<span style="font-size: 14px; line-height: 1.6; color: #D0D6E0">Three issues need your attention today:</span>
-<div style="display: flex; flex-direction: column; border: 1px solid #23252A; border-radius: 10px; overflow: hidden; font-size: 13px">
-<div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-bottom: 1px solid #1C1D21"><span style="width: 8px; height: 8px; border-radius: 99px; background: #F2994A"></span>Decline in keyboard margins<span style="margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #62666D">ACCOUNTING</span></div>
-<div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-bottom: 1px solid #1C1D21"><span style="width: 8px; height: 8px; border-radius: 99px; background: #EB5757"></span>$86,000 of slow-moving inventory<span style="margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #62666D">ERP</span></div>
-<div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px"><span style="width: 8px; height: 8px; border-radius: 99px; background: #5E6AD2"></span>Seven customer orders delayed<span style="margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #62666D">ERP · CRM</span></div>
+<div class="m-main">
+<div class="bubble-u">What should I focus on today?</div>
+<span class="say">Three issues need your attention today:</span>
+<div class="issues">
+<div><b style="background:#F2994A"></b>Decline in keyboard margins<em>ACCOUNTING</em></div>
+<div><b style="background:#EB5757"></b>$86,000 of slow-moving inventory<em>ERP</em></div>
+<div><b style="background:#3B82F6"></b>Seven customer orders delayed<em>ERP · CRM</em></div>
 </div>
-<div style="margin-top: auto; display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 10px; border: 1px solid #26282D; background: #141516; font-size: 13px; color: #62666D">Ask your business anything…<span style="margin-left: auto; padding: 3px 7px; border-radius: 5px; border: 1px solid #26282D; font-family: 'JetBrains Mono', monospace; font-size: 11px">⌘K</span></div>
+<div class="m-input">Ask your business anything…<kbd>⌘K</kbd></div>
 </div>
-<div style="border-left: 1px solid #1C1D21; padding: 22px 20px; display: flex; flex-direction: column; gap: 14px; font-size: 13px">
-<span style="font-size: 11px; font-weight: 500; letter-spacing: 0.6px; text-transform: uppercase; color: #62666D">Awaiting your approval</span>
-<div style="padding: 16px; border-radius: 10px; border: 1px solid #26282D; background: #141516; display: flex; flex-direction: column; gap: 10px">
-<span style="font-weight: 500">Follow-up on seven delayed orders</span>
-<span style="line-height: 1.55; color: #8A8F98">Drafted from ERP and CRM data. Nothing is sent until you approve.</span>
-<div style="display: flex; gap: 8px; margin-top: 4px"><button type="button" tabindex="-1" style="flex-grow: 1; height: 32px; border-radius: 7px; border: 1px solid #26282D; background: transparent; color: #D0D6E0; font-family: 'Inter', sans-serif; font-size: 13px">Edit</button><button type="button" tabindex="-1" style="flex-grow: 1; height: 32px; border-radius: 7px; border: 0; background: #5E6AD2; color: #FFFFFF; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500">Approve</button></div>
+<div class="m-r">
+<span class="lbl">Awaiting your approval</span>
+<div class="appr">
+<b>Follow-up on seven delayed orders</b>
+<span>Drafted from ERP and CRM data. Nothing is sent until you approve.</span>
+<div class="row"><button type="button" tabindex="-1" class="e">Edit</button><button type="button" tabindex="-1" class="a">Approve</button></div>
 </div>
-<span style="margin-top: 8px; font-size: 11px; font-weight: 500; letter-spacing: 0.6px; text-transform: uppercase; color: #62666D">Activity log</span>
-<div style="display: flex; flex-direction: column; gap: 10px; font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.5; color: #62666D"><span>07:30 briefing.generated</span><span>08:12 query · margin.by_category</span><span>08:14 draft.created · awaiting approval</span></div>
+<span class="lbl" style="margin-top:8px">Activity log</span>
+<div class="log"><span>07:30 briefing.generated</span><span>08:12 query · margin.by_category</span><span>08:14 draft.created · awaiting approval</span></div>
+</div>
 </div>
 </div>
 </div>
 </section>
 
 <!-- 2 PROBLEM -->
-<section style="padding: 200px 120px 0; display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 80px">
-<div class="rv" style="display: flex; flex-direction: column; gap: 28px">
-<h2 style="margin: 0; font-size: 52px; font-weight: 600; line-height: 1.06; letter-spacing: -2px">Your business already has the answers. <span style="color: #62666D">Finding them is the problem.</span></h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #8A8F98">Important information is scattered across accounting systems, ERP software, emails, spreadsheets, documents and different employees.</p>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #8A8F98">Getting a simple answer can mean opening several systems, asking multiple people and waiting for someone to prepare a report.</p>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #F7F8F8">Tavien changes that. Instead of searching for information, you simply ask.</p>
+<section class="sec problem">
+<div class="wrap split a">
+<div class="stack g28 rv">
+<h2 class="h2">Your business already has the answers. <span class="dim">Finding them is the problem.</span></h2>
+<p class="lead">Important information is scattered across accounting systems, ERP software, emails, spreadsheets, documents and different employees.</p>
+<p class="lead">Getting a simple answer can mean opening several systems, asking multiple people and waiting for someone to prepare a report.</p>
+<p class="lead" style="color:var(--ink);font-weight:500">Tavien changes that. Instead of searching for information, you simply ask.</p>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 12px">
-<span class="rv" style="align-self: flex-start; padding: 14px 18px; border-radius: 14px; background: #121315; border: 1px solid #23252A; font-size: 17px; color: #D0D6E0">“How are we doing this month?”</span>
-<span class="rv2" style="align-self: flex-end; padding: 14px 18px; border-radius: 14px; background: #121315; border: 1px solid #23252A; font-size: 17px; color: #D0D6E0">“Which orders are delayed?”</span>
-<span class="rv" style="align-self: flex-start; padding: 14px 18px; border-radius: 14px; background: #121315; border: 1px solid #23252A; font-size: 17px; color: #D0D6E0">“What inventory is not moving?”</span>
-<span class="rv2" style="align-self: flex-end; padding: 14px 18px; border-radius: 14px; background: #121315; border: 1px solid #23252A; font-size: 17px; color: #D0D6E0">“Which customers owe us money?”</span>
-<span class="rv" style="align-self: flex-start; padding: 14px 18px; border-radius: 14px; background: #121315; border: 1px solid #5E6AD2; font-size: 17px; color: #F7F8F8">“What should I focus on today?”</span>
-<p class="rv2" style="margin: 16px 0 0; font-size: 16px; line-height: 1.6; color: #8A8F98">Tavien finds the relevant information and turns it into an answer you can actually use.</p>
-</div>
-</section>
-
-<!-- 3 WHAT TAVIEN IS -->
-<section style="padding: 200px 120px 0; display: flex; flex-direction: column; gap: 40px">
-<div class="line" style="height: 1px; background: linear-gradient(90deg, #5E6AD2, rgba(94,106,210,0))"></div>
-<span class="rv" style="font-size: 14px; color: #8A8F98">Your private AI, built around your business.</span>
-<p class="rv big" style="margin: 0; max-width: 1120px; font-size: 46px; font-weight: 500; line-height: 1.2; letter-spacing: -1.4px">Tavien is not another generic chatbot. <span style="color: rgb(98, 102, 109)">We build a private AI assistant around your company, your role and the way you work — a secure Tavien control sits between the AI and your business system.</span></p>
-<p class="rv2" style="margin: 0; max-width: 760px; font-size: 19px; line-height: 1.6; color: #8A8F98">Over time, Tavien becomes an intelligent layer across your business. It knows where information lives, understands what you are allowed to see and helps you turn information into action.</p>
-</section>
-
-<!-- 1.0 EXECUTIVES -->
-<section id="executives" style="padding: 200px 120px 0; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 80px; align-items: start">
-<div class="rv" style="display: flex; flex-direction: column; gap: 24px">
-<span style="font-size: 14px; color: #8A8F98"><span style="color: #5E6AD2">■</span>  1.0  For executives</span>
-<h2 style="margin: 0; font-size: 60px; font-weight: 600; line-height: 1.02; letter-spacing: -2.4px">Your AI chief of staff.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #8A8F98">Imagine starting your morning by asking <span style="color: #F7F8F8">“What needs my attention today?”</span> Tavien reviews approved business information and gives you a concise management briefing.</p>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #8A8F98">It prepares you for meetings, finds documents, summarizes emails, analyzes performance, monitors important developments and helps you follow up on decisions.</p>
-<p style="margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.4px">Instead of navigating your systems, you talk to your business.</p>
-</div>
-<div class="tilt" aria-hidden="true" style="border-radius: 16px; border: 1px solid #23252A; background: #0F1011; overflow: hidden; box-shadow: 0 40px 100px -40px rgba(94,106,210,0.3)">
-<div style="padding: 14px 18px; border-bottom: 1px solid #1C1D21; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #62666D">YOU CAN ASK</div>
-<div style="display: flex; flex-direction: column">
-<div style="display: flex; align-items: center; gap: 14px; padding: 20px 22px; border-bottom: 1px solid #1C1D21; font-size: 17px; color: #D0D6E0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">01</span>Why did our margin fall this month?</div>
-<div style="display: flex; align-items: center; gap: 14px; padding: 20px 22px; border-bottom: 1px solid #1C1D21; font-size: 17px; color: #D0D6E0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">02</span>Which products are tying up the most inventory?</div>
-<div style="display: flex; align-items: center; gap: 14px; padding: 20px 22px; border-bottom: 1px solid #1C1D21; font-size: 17px; color: #D0D6E0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">03</span>Prepare me for my meeting with our largest supplier.</div>
-<div style="display: flex; align-items: center; gap: 14px; padding: 20px 22px; border-bottom: 1px solid #1C1D21; font-size: 17px; color: #D0D6E0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">04</span>Find the agreement we made last year.</div>
-<div style="display: flex; align-items: center; gap: 14px; padding: 20px 22px; font-size: 17px; color: #D0D6E0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">05</span>Draft a follow-up based on yesterday's meeting.</div>
+<div class="stack g12" style="padding-top:12px">
+<span class="q rv">“How are we doing this month?”</span>
+<span class="q r rv" style="--d:.1s">“Which orders are delayed?”</span>
+<span class="q rv">“What inventory is not moving?”</span>
+<span class="q r rv" style="--d:.1s">“Which customers owe us money?”</span>
+<span class="q hi rv">“What should I focus on today?”</span>
+<p class="small-p rv" style="--d:.1s;margin-top:16px">Tavien finds the relevant information and turns it into an answer you can actually use.</p>
 </div>
 </div>
 </section>
 
-<!-- 2.0 INTELLIGENCE -->
-<section id="intelligence" style="padding: 200px 120px 0; display: flex; flex-direction: column; gap: 56px">
-<div class="rv" style="display: flex; flex-direction: column; gap: 24px; max-width: 900px">
-<span style="font-size: 14px; color: #8A8F98"><span style="color: #5E6AD2">■</span>  2.0  Company intelligence</span>
-<h2 style="margin: 0; font-size: 60px; font-weight: 600; line-height: 1.02; letter-spacing: -2.4px">Turn your company data into something you can talk to.</h2>
+<!-- 3 PRIVATE AI ASSISTANT -->
+<section class="sec soft" style="overflow:hidden">
+<div class="wrap stack g56" style="position:relative">
+<div class="what-mark" aria-hidden="true"><svg viewBox="0 0 64 64" width="100%" height="100%"><use href="#tv-mark"/></svg></div>
+<div class="stack g28">
+<div class="rule rv line"></div>
+<span class="eyebrow rv" style="font-weight:400">Your private AI, built around your business.</span>
+<p class="big rv">Tavien is not another generic chatbot. <span class="dim">We build a private AI assistant around your company, your role and the way you work — a secure Tavien control sits between the AI and your business system.</span></p>
+<p class="lead rv" style="max-width:760px;font-size:19px;--d:.1s">Over time, Tavien becomes an intelligent layer across your business. It knows where information lives, understands what you are allowed to see and helps you turn information into action.</p>
 </div>
-<div class="rv flow" style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 44px 48px; border-radius: 18px; border: 1px solid #1C1D21; background: #0B0C0D">
-<div class="line" style="position: absolute; left: 48px; right: 48px; top: 50%; height: 1px; background: linear-gradient(90deg, #26282D, #5E6AD2)"></div>
-<span style="position: relative; padding: 12px 16px; border-radius: 10px; border: 1px solid #26282D; background: #0F1011; font-size: 15px; color: #D0D6E0">ERP</span>
-<span style="position: relative; padding: 12px 16px; border-radius: 10px; border: 1px solid #26282D; background: #0F1011; font-size: 15px; color: #D0D6E0">CRM</span>
-<span style="position: relative; padding: 12px 16px; border-radius: 10px; border: 1px solid #26282D; background: #0F1011; font-size: 15px; color: #D0D6E0">Accounting</span>
-<span style="position: relative; padding: 12px 16px; border-radius: 10px; border: 1px solid #26282D; background: #0F1011; font-size: 15px; color: #D0D6E0">Inventory</span>
-<span style="position: relative; padding: 12px 16px; border-radius: 10px; border: 1px solid #26282D; background: #0F1011; font-size: 15px; color: #D0D6E0">Documents</span>
-<span style="position: relative; padding: 12px 16px; border-radius: 10px; border: 1px solid #26282D; background: #0F1011; font-size: 15px; color: #D0D6E0">Email</span>
-<span style="position: relative; padding: 12px 16px; border-radius: 10px; border: 1px solid #26282D; background: #0F1011; font-size: 15px; color: #D0D6E0">Databases</span>
-<span style="position: relative; padding: 14px 22px; border-radius: 10px; background: #5E6AD2; font-size: 16px; font-weight: 600; color: #FFFFFF; box-shadow: 0 0 40px rgba(94,106,210,0.55)">Tavien</span>
+<div class="stack g56" style="padding-top:72px">
+<h2 class="h2 rv" style="max-width:1000px">One assistant for the executive. <span class="dim">One intelligence layer for the company.</span></h2>
+<div class="split d">
+<div class="stack g22 rv">
+<p class="lead">An executive's work is not separated neatly between apps. Tavien brings those worlds together — managing your working day while securely accessing the company information you are authorized to use.</p>
+<div class="chips"><span class="chip">Calendar</span><span class="chip">Email</span><span class="chip">Meetings</span><span class="chip">Research</span><span class="chip">Documents</span><span class="chip">Company data</span><span class="chip">Tasks</span><span class="chip">Decisions</span></div>
 </div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 80px">
-<div class="rv" style="display: flex; flex-direction: column; gap: 18px; font-size: 18px; line-height: 1.6; color: #8A8F98">
-<p style="margin: 0"><span style="color: #F7F8F8">You don't need to replace your current software. Tavien sits above it.</span></p>
-<p style="margin: 0">Your existing systems remain the source of truth. Tavien makes the information inside them easier to understand and use.</p>
+<div class="stack g16 rv" style="--d:.1s">
+<div class="prompt"><span class="n">1</span>“What meetings do I have tomorrow?”</div>
+<div class="prompt hi"><span class="n">2</span>“Prepare me for my 10am meeting with ABC.”</div>
+<p class="small-p" style="font-size:15px;margin-top:6px">Calendar, previous emails, documents and company information — combined into one briefing. Much closer to a real executive assistant than a chatbot.</p>
 </div>
-<div class="rv2" style="display: flex; flex-direction: column; border-top: 1px solid #1C1D21; font-size: 16px">
-<div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #1C1D21"><span style="color: #D0D6E0">A manager</span><span style="color: #8A8F98">asks about sales</span></div>
-<div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #1C1D21"><span style="color: #D0D6E0">A purchasing team</span><span style="color: #8A8F98">asks about inventory</span></div>
-<div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #1C1D21"><span style="color: #D0D6E0">A salesperson</span><span style="color: #8A8F98">checks availability</span></div>
-<div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #1C1D21"><span style="color: #D0D6E0">An owner</span><span style="color: #8A8F98">sees the business as a whole</span></div>
-<span style="padding-top: 16px; font-size: 14px; color: #62666D">Each person only accesses what they are authorized to see.</span>
+</div>
 </div>
 </div>
 </section>
 
-<!-- 3.0 AUTOMATION -->
-<section id="automation" style="padding: 200px 120px 0; display: flex; flex-direction: column; gap: 56px">
-<div class="rv" style="display: flex; flex-direction: column; gap: 24px; max-width: 980px">
-<span style="font-size: 14px; color: #8A8F98"><span style="color: #5E6AD2">■</span>  3.0  Automation</span>
-<h2 style="margin: 0; font-size: 60px; font-weight: 600; line-height: 1.02; letter-spacing: -2.4px">Tavien doesn't just answer questions. <span style="color: #62666D">It gets work done.</span></h2>
-<p style="margin: 0; max-width: 640px; font-size: 18px; line-height: 1.6; color: #8A8F98">The real value of AI begins when it stops waiting for you to ask. Tavien can monitor your business and help automate repetitive work.</p>
+<!-- 4 COMPANY INTELLIGENCE -->
+<section id="intelligence" class="sec">
+<div class="wrap stack g56">
+<div class="stack g24 rv" style="max-width:900px">
+<span class="eyebrow">1.0  Company intelligence</span>
+<h2 class="h2 lg">Turn your company data into something you can talk to.</h2>
 </div>
-<div class="hair" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: #1C1D21; border: 1px solid #1C1D21; border-radius: 16px; overflow: hidden">
-<div class="rv" style="padding: 32px; background: #08090A; display: flex; flex-direction: column; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5E6AD2">EVERY MORNING</span><span style="font-size: 16px; line-height: 1.55; color: #D0D6E0">An executive briefing with the issues that require attention.</span></div>
-<div class="rv" style="padding: 32px; background: #08090A; display: flex; flex-direction: column; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5E6AD2">BEFORE A MEETING</span><span style="font-size: 16px; line-height: 1.55; color: #D0D6E0">Relevant emails, documents and business information, gathered.</span></div>
-<div class="rv" style="padding: 32px; background: #08090A; display: flex; flex-direction: column; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5E6AD2">ORDER RUNNING LATE</span><span style="font-size: 16px; line-height: 1.55; color: #D0D6E0">Flagged, with a follow-up prepared.</span></div>
-<div class="rv2" style="padding: 32px; background: #08090A; display: flex; flex-direction: column; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5E6AD2">INVENTORY THRESHOLD</span><span style="font-size: 16px; line-height: 1.55; color: #D0D6E0">A purchasing recommendation, ready to review.</span></div>
-<div class="rv2" style="padding: 32px; background: #08090A; display: flex; flex-direction: column; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5E6AD2">CUSTOMER INQUIRY</span><span style="font-size: 16px; line-height: 1.55; color: #D0D6E0">The right information gathered and a response drafted.</span></div>
-<div class="rv2" style="padding: 32px; background: #08090A; display: flex; flex-direction: column; gap: 12px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5E6AD2">RECURRING WORK</span><span style="font-size: 16px; line-height: 1.55; color: #D0D6E0">Reports, research, document preparation and admin workflows.</span></div>
+<div class="flow rv">
+<div class="pills"><span class="pill">ERP</span><span class="pill">CRM</span><span class="pill">Accounting</span><span class="pill">Inventory</span><span class="pill">Documents</span><span class="pill">Email</span><span class="pill">Databases</span></div>
+<div class="link" aria-hidden="true"></div>
+<div class="node"><svg aria-hidden="true"><use href="#tv-mark"/></svg>Tavien</div>
 </div>
-<div class="rv" style="display: flex; justify-content: space-between; align-items: center; gap: 48px">
-<span style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: #8A8F98"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F2994A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>Sensitive actions can still require a human to approve them before anything happens.</span>
-<span style="font-size: 24px; font-weight: 500; letter-spacing: -0.6px">Less searching. Less coordinating. Less repetitive work.</span>
+<div class="split d">
+<div class="stack g22 rv" style="font-size:18px;line-height:1.6;color:var(--muted)">
+<p style="color:var(--ink);font-weight:500">You don't need to replace your current software. Tavien sits above it.</p>
+<p>Your existing systems remain the source of truth. Tavien makes the information inside them easier to understand and use.</p>
 </div>
-</section>
-
-<!-- 4.0 TEAM -->
-<section style="padding: 200px 120px 0; display: flex; flex-direction: column; gap: 56px">
-<div class="rv" style="display: flex; flex-direction: column; gap: 24px; max-width: 980px">
-<span style="font-size: 14px; color: #8A8F98"><span style="color: #5E6AD2">■</span>  4.0  For the team</span>
-<h2 style="margin: 0; font-size: 60px; font-weight: 600; line-height: 1.02; letter-spacing: -2.4px">Give every employee an assistant that understands their job.</h2>
+<div class="rows rv" style="--d:.1s">
+<div><span>A manager</span><span>asks about sales</span></div>
+<div><span>A purchasing team</span><span>asks about inventory</span></div>
+<div><span>A salesperson</span><span>checks availability</span></div>
+<div><span>An owner</span><span>sees the business as a whole</span></div>
+<span class="foot">Each person only accesses what they are authorized to see.</span>
 </div>
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
-<div class="rv" style="padding: 28px; border-radius: 14px; border: 1px solid #1C1D21; background: #0B0C0D; display: flex; flex-direction: column; gap: 16px"><span style="font-size: 18px; font-weight: 500">Salesperson</span><div style="display: flex; flex-wrap: wrap; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #D0D6E0"><span style="padding: 5px 8px; border-radius: 5px; border: 1px solid #26282D">customers</span><span style="padding: 5px 8px; border-radius: 5px; border: 1px solid #26282D">orders</span><span style="padding: 5px 8px; border-radius: 5px; border: 1px solid #26282D">inventory</span></div></div>
-<div class="rv" style="padding: 28px; border-radius: 14px; border: 1px solid #1C1D21; background: #0B0C0D; display: flex; flex-direction: column; gap: 16px"><span style="font-size: 18px; font-weight: 500">Purchasing manager</span><div style="display: flex; flex-wrap: wrap; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #D0D6E0"><span style="padding: 5px 8px; border-radius: 5px; border: 1px solid #26282D">suppliers</span><span style="padding: 5px 8px; border-radius: 5px; border: 1px solid #26282D">stock levels</span><span style="padding: 5px 8px; border-radius: 5px; border: 1px solid #26282D">purchasing</span></div></div>
-<div class="rv2" style="padding: 28px; border-radius: 14px; border: 1px solid #1C1D21; background: #0B0C0D; display: flex; flex-direction: column; gap: 16px"><span style="font-size: 18px; font-weight: 500">General manager</span><div style="display: flex; flex-wrap: wrap; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #D0D6E0"><span style="padding: 5px 8px; border-radius: 5px; border: 1px solid #26282D">company-wide operations</span></div></div>
-<div class="rv2" style="padding: 28px; border-radius: 14px; border: 1px solid #5E6AD2; background: #0B0C0D; display: flex; flex-direction: column; gap: 16px"><span style="font-size: 18px; font-weight: 500">Owner</span><div style="display: flex; flex-wrap: wrap; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #D0D6E0"><span style="padding: 5px 8px; border-radius: 5px; border: 1px solid #26282D">everything — including what no one else sees</span></div></div>
-</div>
-<p class="rv big" style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.8px; color: #62666D">The same intelligent company layer — <span style="color: #F7F8F8">each person gets the right view of it.</span></p>
-</section>
-
-<!-- 5.0 SECURITY -->
-<section id="security" style="margin-top: 200px; padding: 160px 120px; background: #050606; border-top: 1px solid #16171A; border-bottom: 1px solid #16171A; display: flex; flex-direction: column; gap: 64px; position: relative; overflow: hidden">
-<div class="glow" style="position: absolute; left: 50%; top: -260px; width: 1200px; height: 520px; margin-left: -600px; border-radius: 50%; background: radial-gradient(closest-side, rgba(94,106,210,0.2), rgba(94,106,210,0) 70%)"></div>
-<div class="rv" style="display: flex; flex-direction: column; gap: 24px; max-width: 900px; position: relative">
-<span style="font-size: 14px; color: #8A8F98"><span style="color: #5E6AD2">■</span>  5.0  Security</span>
-<h2 style="margin: 0; font-size: 60px; font-weight: 600; line-height: 1.02; letter-spacing: -2.4px">Your business data stays under your control.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #8A8F98">Giving AI access to company information requires more than connecting an API. Your company decides what the assistant can access, who can access it and what actions it is allowed to perform.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; position: relative">
-<div class="rv" style="padding: 28px; border-radius: 14px; border: 1px solid #1C1D21; background: #0B0C0D; display: flex; flex-direction: column; gap: 12px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D0D6E0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg><span style="font-size: 17px; font-weight: 500">Read-only mode</span><span style="font-size: 15px; line-height: 1.55; color: #8A8F98">Sensitive systems can begin read-only.</span></div>
-<div class="rv" style="padding: 28px; border-radius: 14px; border: 1px solid #1C1D21; background: #0B0C0D; display: flex; flex-direction: column; gap: 12px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D0D6E0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span style="font-size: 17px; font-weight: 500">Explicit approval</span><span style="font-size: 15px; line-height: 1.55; color: #8A8F98">Sending, publishing, deleting or changing data can require approval.</span></div>
-<div class="rv2" style="padding: 28px; border-radius: 14px; border: 1px solid #1C1D21; background: #0B0C0D; display: flex; flex-direction: column; gap: 12px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D0D6E0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.3c2 .8 3.5 2.8 3.5 5.7"></path></svg><span style="font-size: 17px; font-weight: 500">Role separation</span><span style="font-size: 15px; line-height: 1.55; color: #8A8F98">Access can be separated by employee role.</span></div>
-<div class="rv2" style="padding: 28px; border-radius: 14px; border: 1px solid #1C1D21; background: #0B0C0D; display: flex; flex-direction: column; gap: 12px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D0D6E0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><path d="M14 3v6h6M8 13h8M8 17h5"></path></svg><span style="font-size: 17px; font-weight: 500">Logging</span><span style="font-size: 15px; line-height: 1.55; color: #8A8F98">Important interactions and actions can be logged.</span></div>
-</div>
-<p class="rv big" style="margin: 0; max-width: 1100px; font-size: 52px; font-weight: 600; line-height: 1.08; letter-spacing: -2px; position: relative">Give AI access to your business <span style="color: #5E6AD2">without giving AI control of your business.</span></p>
-</section>
-
-<!-- USE CASE CONVERSATION -->
-<section style="padding: 200px 120px 0; display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 80px; align-items: center">
-<div class="rv" style="display: flex; flex-direction: column; gap: 20px">
-<span style="font-size: 14px; color: #8A8F98">Owner / CEO</span>
-<h2 style="margin: 0; font-size: 56px; font-weight: 600; line-height: 1.02; letter-spacing: -2.2px">What would you ask Tavien?</h2>
-</div>
-<div class="tilt" aria-hidden="true" style="padding: 32px; border-radius: 18px; border: 1px solid #23252A; background: #0F1011; display: flex; flex-direction: column; gap: 22px; box-shadow: 0 40px 100px -40px rgba(94,106,210,0.35)">
-<div class="rv" style="align-self: flex-end; padding: 12px 16px; border-radius: 12px; background: #1A1B1F; border: 1px solid #26282D; font-size: 16px">How are we doing this month?</div>
-<div class="rv" style="display: flex; gap: 14px"><span style="flex-shrink: 0; width: 28px; height: 28px; border-radius: 8px; background: #5E6AD2"></span><span style="font-size: 16px; line-height: 1.65; color: #D0D6E0">Revenue is <span style="color: #4CB782">8% ahead</span> of last month, but gross margin has fallen <span style="color: #F2994A">1.7 percentage points</span>. The largest contributor is lower margin on three keyboard categories. Seven customer orders are also more than five days late.</span></div>
-<div class="rv2" style="align-self: flex-end; padding: 12px 16px; border-radius: 12px; background: #1A1B1F; border: 1px solid #26282D; font-size: 16px">What should I focus on?</div>
-<div class="rv2" style="display: flex; gap: 14px"><span style="flex-shrink: 0; width: 28px; height: 28px; border-radius: 8px; background: #5E6AD2"></span><span style="font-size: 16px; line-height: 1.65; color: #D0D6E0">I would look at three issues today: the decline in keyboard margins, <span style="color: #F7F8F8">$86,000</span> of slow-moving inventory, and the seven delayed orders. I can prepare a breakdown of each.</span></div>
-</div>
-</section>
-
-<!-- PERSONAL + PROFESSIONAL -->
-<section style="padding: 200px 120px 0; display: flex; flex-direction: column; gap: 56px">
-<h2 class="rv" style="margin: 0; max-width: 1000px; font-size: 56px; font-weight: 600; line-height: 1.04; letter-spacing: -2.2px">One assistant for the executive. <span style="color: #62666D">One intelligence layer for the company.</span></h2>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 80px">
-<div class="rv" style="display: flex; flex-direction: column; gap: 22px">
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #8A8F98">An executive's work is not separated neatly between apps. Tavien brings those worlds together — managing your working day while securely accessing the company information you are authorized to use.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; color: #D0D6E0"><span style="padding: 8px 12px; border-radius: 999px; border: 1px solid #26282D">Calendar</span><span style="padding: 8px 12px; border-radius: 999px; border: 1px solid #26282D">Email</span><span style="padding: 8px 12px; border-radius: 999px; border: 1px solid #26282D">Meetings</span><span style="padding: 8px 12px; border-radius: 999px; border: 1px solid #26282D">Research</span><span style="padding: 8px 12px; border-radius: 999px; border: 1px solid #26282D">Documents</span><span style="padding: 8px 12px; border-radius: 999px; border: 1px solid #26282D">Company data</span><span style="padding: 8px 12px; border-radius: 999px; border: 1px solid #26282D">Tasks</span><span style="padding: 8px 12px; border-radius: 999px; border: 1px solid #26282D">Decisions</span></div>
-</div>
-<div class="rv2" style="display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; border-radius: 12px; border: 1px solid #23252A; background: #0F1011; font-size: 16px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">1</span>“What meetings do I have tomorrow?”</div>
-<div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; border-radius: 12px; border: 1px solid #5E6AD2; background: #0F1011; font-size: 16px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">2</span>“Prepare me for my 10am meeting with ABC.”</div>
-<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.6; color: #8A8F98">Calendar, previous emails, documents and company information — combined into one briefing. Much closer to a real executive assistant than a chatbot.</p>
 </div>
 </div>
 </section>
 
-<!-- 6.0 HOW IT WORKS -->
-<section id="how" style="padding: 200px 120px 0; display: flex; flex-direction: column; gap: 56px">
-<div class="rv" style="display: flex; flex-direction: column; gap: 24px">
-<span style="font-size: 14px; color: #8A8F98"><span style="color: #5E6AD2">■</span>  6.0  How it works</span>
-<h2 style="margin: 0; font-size: 60px; font-weight: 600; line-height: 1.02; letter-spacing: -2.4px">We build Tavien around your company.</h2>
+<!-- 5 AUTOMATION -->
+<section id="automation" class="sec soft">
+<div class="wrap stack g56">
+<div class="stack g24 rv" style="max-width:980px">
+<span class="eyebrow">2.0  Automation</span>
+<h2 class="h2 lg">Tavien doesn't just answer questions. <span class="dim">It gets work done.</span></h2>
+<p class="lead" style="max-width:640px">The real value of AI begins when it stops waiting for you to ask. Tavien can monitor your business and help automate repetitive work.</p>
 </div>
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px">
-<div class="rv" style="display: flex; flex-direction: column; gap: 14px"><div class="line" style="height: 2px; background: #5E6AD2"></div><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">01</span><span style="font-size: 20px; font-weight: 500">Understand</span><span style="font-size: 15px; line-height: 1.6; color: #8A8F98">We learn how your company operates, where your information lives and which workflows consume the most time.</span></div>
-<div class="rv" style="display: flex; flex-direction: column; gap: 14px"><div class="line" style="height: 2px; background: #5E6AD2"></div><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">02</span><span style="font-size: 20px; font-weight: 500">Connect</span><span style="font-size: 15px; line-height: 1.6; color: #8A8F98">We securely connect Tavien to the approved systems, documents and data sources that matter.</span></div>
-<div class="rv2" style="display: flex; flex-direction: column; gap: 14px"><div class="line" style="height: 2px; background: #5E6AD2"></div><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">03</span><span style="font-size: 20px; font-weight: 500">Build</span><span style="font-size: 15px; line-height: 1.6; color: #8A8F98">We create your assistants, company tools, permissions and automations around real business use cases.</span></div>
-<div class="rv2" style="display: flex; flex-direction: column; gap: 14px"><div class="line" style="height: 2px; background: #5E6AD2"></div><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #62666D">04</span><span style="font-size: 20px; font-weight: 500">Expand</span><span style="font-size: 15px; line-height: 1.6; color: #8A8F98">Start with one executive or department. Once it proves its value, expand across teams, systems and workflows.</span></div>
+<div class="hair rv">
+<div class="cell"><span class="mono">EVERY MORNING</span><p>An executive briefing with the issues that require attention.</p></div>
+<div class="cell"><span class="mono">BEFORE A MEETING</span><p>Relevant emails, documents and business information, gathered.</p></div>
+<div class="cell"><span class="mono">ORDER RUNNING LATE</span><p>Flagged, with a follow-up prepared.</p></div>
+<div class="cell"><span class="mono">INVENTORY THRESHOLD</span><p>A purchasing recommendation, ready to review.</p></div>
+<div class="cell"><span class="mono">CUSTOMER INQUIRY</span><p>The right information gathered and a response drafted.</p></div>
+<div class="cell"><span class="mono">RECURRING WORK</span><p>Reports, research, document preparation and admin workflows.</p></div>
 </div>
-<p class="rv big" style="margin: 0; font-size: 34px; font-weight: 500; letter-spacing: -1px">Start with one person. <span style="color: #8A8F98">Solve real problems.</span> <span style="color: #62666D">Expand from there.</span></p>
+<div class="note-row rv">
+<span class="note"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E08A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Sensitive actions can still require a human to approve them before anything happens.</span>
+<span class="big s" style="max-width:none">Less searching. Less coordinating. Less repetitive work.</span>
+</div>
+</div>
+</section>
+
+<!-- 6 SECURITY ARCHITECTURE -->
+<section id="security" class="sec dark" style="overflow:hidden">
+<div class="contact-glow" style="top:-300px;opacity:.7"></div>
+<div class="wrap stack g56" style="position:relative">
+<div class="stack g24 rv" style="max-width:900px">
+<span class="eyebrow">3.0  Security</span>
+<h2 class="h2 lg">Your business data stays under your control.</h2>
+<p class="lead">Giving AI access to company information requires more than connecting an API. Your company decides what the assistant can access, who can access it and what actions it is allowed to perform.</p>
+</div>
+<div class="arch rv" role="img" aria-label="The AI assistant connects to Tavien Core, which connects to your ERP, CRM, accounting, documents, email, calendar, databases and internal tools.">
+<div class="node-ai"><svg viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>AI assistant</div>
+<div class="link" aria-hidden="true"></div>
+<div class="core"><svg aria-hidden="true"><use href="#tv-mark"/></svg>Tavien Core</div>
+<div class="link two" aria-hidden="true"></div>
+<div class="sys"><span>ERP</span><span>CRM</span><span>Accounting</span><span>Documents</span><span>Email</span><span>Calendar</span><span>Databases</span><span>Internal tools</span></div>
+</div>
+<div class="grid4">
+<div class="card rv"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Read-only mode</h3><p>Sensitive systems can begin read-only.</p></div>
+<div class="card rv" style="--d:.06s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div><h3>Explicit approval</h3><p>Sending, publishing, deleting or changing data can require approval.</p></div>
+<div class="card rv" style="--d:.12s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.3c2 .8 3.5 2.8 3.5 5.7"/></svg></div><h3>Role separation</h3><p>Access can be separated by employee role.</p></div>
+<div class="card rv" style="--d:.18s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div><h3>Logging</h3><p>Important interactions and actions can be logged.</p></div>
+</div>
+<p class="big rv" style="font-size:clamp(30px,4.4vw,52px);font-weight:700;letter-spacing:-.035em;line-height:1.08">Give AI access to your business <span class="grad-text">without giving AI control of your business.</span></p>
+</div>
+</section>
+
+<!-- 7 EXECUTIVE USE CASES -->
+<section id="executives" class="sec">
+<div class="wrap stack" style="gap:120px">
+<div class="split b">
+<div class="stack g24 rv">
+<span class="eyebrow">4.0  For executives</span>
+<h2 class="h2 lg">Your AI chief of staff.</h2>
+<p class="lead">Imagine starting your morning by asking <span style="color:var(--ink);font-weight:500">“What needs my attention today?”</span> Tavien reviews approved business information and gives you a concise management briefing.</p>
+<p class="lead">It prepares you for meetings, finds documents, summarizes emails, analyzes performance, monitors important developments and helps you follow up on decisions.</p>
+<p style="font-family:var(--head);font-size:22px;font-weight:700;letter-spacing:-.03em;line-height:1.3">Instead of navigating your systems, you talk to your business.</p>
+</div>
+<div class="rv tilt" aria-hidden="true" style="border-radius:20px;border:1px solid var(--line);background:#fff;overflow:hidden;box-shadow:0 40px 90px -40px rgba(59,130,246,.45)">
+<div class="mono" style="padding:14px 20px;border-bottom:1px solid var(--line);font-size:11px;color:var(--dim);background:#FAFBFE;letter-spacing:.04em">YOU CAN ASK</div>
+<div class="rows" style="border:0">
+<div style="padding:20px 22px;justify-content:flex-start;gap:14px;align-items:center"><span class="mono" style="font-size:12px;color:var(--dim)">01</span><span style="font-size:17px;font-weight:400;color:#25305A">Why did our margin fall this month?</span></div>
+<div style="padding:20px 22px;justify-content:flex-start;gap:14px;align-items:center"><span class="mono" style="font-size:12px;color:var(--dim)">02</span><span style="font-size:17px;font-weight:400;color:#25305A">Which products are tying up the most inventory?</span></div>
+<div style="padding:20px 22px;justify-content:flex-start;gap:14px;align-items:center"><span class="mono" style="font-size:12px;color:var(--dim)">03</span><span style="font-size:17px;font-weight:400;color:#25305A">Prepare me for my meeting with our largest supplier.</span></div>
+<div style="padding:20px 22px;justify-content:flex-start;gap:14px;align-items:center"><span class="mono" style="font-size:12px;color:var(--dim)">04</span><span style="font-size:17px;font-weight:400;color:#25305A">Find the agreement we made last year.</span></div>
+<div style="padding:20px 22px;justify-content:flex-start;gap:14px;align-items:center;border-bottom:0"><span class="mono" style="font-size:12px;color:var(--dim)">05</span><span style="font-size:17px;font-weight:400;color:#25305A">Draft a follow-up based on yesterday's meeting.</span></div>
+</div>
+</div>
+</div>
+<div class="split c">
+<div class="stack g22 rv">
+<span class="eyebrow">Owner / CEO</span>
+<h2 class="h2">What would you ask Tavien?</h2>
+</div>
+<div class="rv tilt" aria-hidden="true" style="padding:32px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(180deg,#fff,var(--soft));display:flex;flex-direction:column;gap:22px;box-shadow:0 40px 90px -40px rgba(59,130,246,.45)">
+<div class="bubble-u" style="align-self:flex-end;font-size:16px">How are we doing this month?</div>
+<div style="display:flex;gap:14px"><span style="flex:none;width:30px;height:30px;border-radius:9px;background:var(--navy-900);display:grid;place-items:center"><svg width="18" height="18" aria-hidden="true"><use href="#tv-mark"/></svg></span><span style="font-size:16px;line-height:1.65;color:#25305A">Revenue is <span style="color:#1C9A62;font-weight:600">8% ahead</span> of last month, but gross margin has fallen <span style="color:#D9781E;font-weight:600">1.7 percentage points</span>. The largest contributor is lower margin on three keyboard categories. Seven customer orders are also more than five days late.</span></div>
+<div class="bubble-u" style="align-self:flex-end;font-size:16px">What should I focus on?</div>
+<div style="display:flex;gap:14px"><span style="flex:none;width:30px;height:30px;border-radius:9px;background:var(--navy-900);display:grid;place-items:center"><svg width="18" height="18" aria-hidden="true"><use href="#tv-mark"/></svg></span><span style="font-size:16px;line-height:1.65;color:#25305A">I would look at three issues today: the decline in keyboard margins, <span style="color:var(--ink);font-weight:600">$86,000</span> of slow-moving inventory, and the seven delayed orders. I can prepare a breakdown of each.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 8 TEAM USE CASES -->
+<section class="sec soft">
+<div class="wrap stack g56">
+<div class="stack g24 rv" style="max-width:980px">
+<span class="eyebrow">5.0  For the team</span>
+<h2 class="h2 lg">Give every employee an assistant that understands their job.</h2>
+</div>
+<div class="grid4">
+<div class="card rv"><h3>Salesperson</h3><div class="tags"><span>customers</span><span>orders</span><span>inventory</span></div></div>
+<div class="card rv" style="--d:.06s"><h3>Purchasing manager</h3><div class="tags"><span>suppliers</span><span>stock levels</span><span>purchasing</span></div></div>
+<div class="card rv" style="--d:.12s"><h3>General manager</h3><div class="tags"><span>company-wide operations</span></div></div>
+<div class="card owner rv" style="--d:.18s"><h3>Owner</h3><div class="tags"><span>everything — including what no one else sees</span></div></div>
+</div>
+<p class="big s rv" style="color:var(--dim)">The same intelligent company layer — <span style="color:var(--ink)">each person gets the right view of it.</span></p>
+</div>
+</section>
+
+<!-- 9 HOW IT WORKS -->
+<section id="how" class="sec">
+<div class="wrap stack g56">
+<div class="stack g24 rv">
+<span class="eyebrow">6.0  How it works</span>
+<h2 class="h2 lg">We build Tavien around your company.</h2>
+</div>
+<div class="grid4" style="gap:32px">
+<div class="step rv"><div class="bar rv line"></div><span class="mono">01</span><h3>Understand</h3><p>We learn how your company operates, where your information lives and which workflows consume the most time.</p></div>
+<div class="step rv" style="--d:.06s"><div class="bar rv line"></div><span class="mono">02</span><h3>Connect</h3><p>We securely connect Tavien to the approved systems, documents and data sources that matter.</p></div>
+<div class="step rv" style="--d:.12s"><div class="bar rv line"></div><span class="mono">03</span><h3>Build</h3><p>We create your assistants, company tools, permissions and automations around real business use cases.</p></div>
+<div class="step rv" style="--d:.18s"><div class="bar rv line"></div><span class="mono">04</span><h3>Expand</h3><p>Start with one executive or department. Once it proves its value, expand across teams, systems and workflows.</p></div>
+</div>
+<p class="big s rv" style="font-size:clamp(24px,3vw,34px)">Start with one person. <span style="color:var(--muted)">Solve real problems.</span> <span class="dim">Expand from there.</span></p>
+</div>
 </section>
 
 <!-- WHY TAVIEN -->
-<section style="padding: 200px 120px 0; display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 80px">
-<div class="rv" style="display: flex; flex-direction: column; gap: 24px">
-<h2 style="margin: 0; font-size: 56px; font-weight: 600; line-height: 1.04; letter-spacing: -2.2px">AI built around the business you already have.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #8A8F98">Most companies do not need another software platform. They need the systems they already use to work better together. Tavien starts with your data, your workflows, your employees and your software — and builds the intelligent layer around them.</p>
+<section class="sec soft">
+<div class="wrap split a">
+<div class="stack g24 rv">
+<h2 class="h2">AI built around the business you already have.</h2>
+<p class="lead">Most companies do not need another software platform. They need the systems they already use to work better together. Tavien starts with your data, your workflows, your employees and your software — and builds the intelligent layer around them.</p>
 </div>
-<div class="rv2" style="display: flex; flex-direction: column; justify-content: center; gap: 0; border-top: 1px solid #1C1D21">
-<span style="padding: 22px 0; border-bottom: 1px solid #1C1D21; font-size: 20px; color: #D0D6E0"><span style="color: #62666D">No</span> rip-and-replace transformation.</span>
-<span style="padding: 22px 0; border-bottom: 1px solid #1C1D21; font-size: 20px; color: #D0D6E0"><span style="color: #62666D">No</span> generic chatbot.</span>
-<span style="padding: 22px 0; border-bottom: 1px solid #1C1D21; font-size: 20px; color: #D0D6E0"><span style="color: #62666D">No</span> AI experiment disconnected from how you work.</span>
-<span style="padding: 22px 0; font-size: 17px; line-height: 1.5; color: #F7F8F8">AI that understands your business and becomes more useful as it learns how you operate.</span>
+<div class="rows rv" style="--d:.1s;justify-content:center;font-family:var(--head);letter-spacing:-.02em">
+<div style="font-size:20px;justify-content:flex-start;gap:6px;padding:22px 0"><span style="color:var(--dim);font-weight:500">No</span><span style="color:var(--ink);font-weight:500;text-align:left">rip-and-replace transformation.</span></div>
+<div style="font-size:20px;justify-content:flex-start;gap:6px;padding:22px 0"><span style="color:var(--dim);font-weight:500">No</span><span style="color:var(--ink);font-weight:500;text-align:left">generic chatbot.</span></div>
+<div style="font-size:20px;justify-content:flex-start;gap:6px;padding:22px 0"><span style="color:var(--dim);font-weight:500">No</span><span style="color:var(--ink);font-weight:500;text-align:left">AI experiment disconnected from how you work.</span></div>
+<span class="foot" style="font-family:var(--body);font-size:17px;line-height:1.5;color:var(--ink);letter-spacing:0;padding-top:22px">AI that understands your business and becomes more useful as it learns how you operate.</span>
+</div>
 </div>
 </section>
 
 <!-- WHO IT'S FOR -->
-<section style="padding: 200px 120px 0; display: flex; flex-direction: column; gap: 48px">
-<h2 class="rv" style="margin: 0; max-width: 1080px; font-size: 52px; font-weight: 600; line-height: 1.06; letter-spacing: -2px">Built for businesses where decisions still depend on people finding the right information.</h2>
-<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px">
-<span class="rv" style="padding: 22px; border-radius: 12px; border: 1px solid #1C1D21; background: #0B0C0D; font-size: 16px; font-weight: 500; line-height: 1.4">Owner-managed companies</span>
-<span class="rv" style="padding: 22px; border-radius: 12px; border: 1px solid #1C1D21; background: #0B0C0D; font-size: 16px; font-weight: 500; line-height: 1.4">Family businesses</span>
-<span class="rv" style="padding: 22px; border-radius: 12px; border: 1px solid #1C1D21; background: #0B0C0D; font-size: 16px; font-weight: 500; line-height: 1.4">SMEs and mid-sized companies</span>
-<span class="rv2" style="padding: 22px; border-radius: 12px; border: 1px solid #1C1D21; background: #0B0C0D; font-size: 16px; font-weight: 500; line-height: 1.4">Executives with fragmented systems</span>
-<span class="rv2" style="padding: 22px; border-radius: 12px; border: 1px solid #1C1D21; background: #0B0C0D; font-size: 16px; font-weight: 500; line-height: 1.4">Companies with ERP, CRM and accounting but weak visibility</span>
+<section class="sec">
+<div class="wrap stack" style="gap:48px">
+<h2 class="h2 rv" style="max-width:1080px;font-size:clamp(32px,4.2vw,52px)">Built for businesses where decisions still depend on people finding the right information.</h2>
+<div class="grid5">
+<span class="who-card rv">Owner-managed companies</span>
+<span class="who-card rv" style="--d:.05s">Family businesses</span>
+<span class="who-card rv" style="--d:.1s">SMEs and mid-sized companies</span>
+<span class="who-card rv" style="--d:.15s">Executives with fragmented systems</span>
+<span class="who-card rv" style="--d:.2s">Companies with ERP, CRM and accounting but weak visibility</span>
 </div>
-<div class="rv2" style="display: flex; gap: 36px; flex-wrap: wrap; font-size: 20px; font-weight: 500; letter-spacing: -0.3px; color: #62666D"><span>Distribution</span><span>Retail</span><span>Hospitality</span><span>Manufacturing</span><span>Professional services</span><span>Real estate</span><span>Logistics</span></div>
+<div class="sectors rv"><span>Distribution</span><span>Retail</span><span>Hospitality</span><span>Manufacturing</span><span>Professional services</span><span>Real estate</span><span>Logistics</span></div>
+</div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" style="padding: 200px 120px 0; display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 80px; align-items: start">
-<div class="rv" style="display: flex; flex-direction: column; gap: 24px">
-<h2 style="margin: 0; font-size: 60px; font-weight: 600; line-height: 1.02; letter-spacing: -2.4px">About Tavien</h2>
-<p style="margin: 0; font-size: 22px; font-weight: 500; line-height: 1.4; letter-spacing: -0.4px">Tavien builds private AI assistants for business owners, executives and teams.</p>
+<section id="about" class="sec soft">
+<div class="wrap split c" style="align-items:start">
+<div class="stack g24 rv">
+<h2 class="h2 lg">About Tavien</h2>
+<p style="font-family:var(--head);font-size:22px;font-weight:700;letter-spacing:-.03em;line-height:1.35">Tavien builds private AI assistants for business owners, executives and teams.</p>
 </div>
-<div class="rv2" style="display: flex; flex-direction: column; gap: 22px; font-size: 18px; line-height: 1.6; color: #8A8F98">
-<p style="margin: 0">Our goal is simple: help people understand their business faster, work more efficiently and make better use of the information they already have.</p>
-<p style="margin: 0">Most companies already have the answers they need. The problem is that those answers are scattered across ERP systems, accounting software, CRM platforms, documents, emails, calendars, databases and internal tools.</p>
-<p style="margin: 0">Tavien brings that information together through a secure intelligence layer. Instead of searching through multiple systems or waiting for reports, users can ask questions in plain language, retrieve approved information and automate repetitive work.</p>
-<p style="margin: 0">Security is built into the architecture. Tavien does not give AI unrestricted access to core business systems. A controlled layer sits between the assistant and company data, enforcing permissions, limiting access and requiring human approval for sensitive actions when needed.</p>
-<p style="margin: 0; color: #F7F8F8">Over time, Tavien becomes more than an assistant. It becomes an intelligent operating layer across the business — helping people find information, monitor what matters and get work done.</p>
+<div class="stack g22 rv" style="--d:.1s">
+<p class="about-p">Our goal is simple: help people understand their business faster, work more efficiently and make better use of the information they already have.</p>
+<p class="about-p">Most companies already have the answers they need. The problem is that those answers are scattered across ERP systems, accounting software, CRM platforms, documents, emails, calendars, databases and internal tools.</p>
+<p class="about-p">Tavien brings that information together through a secure intelligence layer. Instead of searching through multiple systems or waiting for reports, users can ask questions in plain language, retrieve approved information and automate repetitive work.</p>
+<p class="about-p">Security is built into the architecture. Tavien does not give AI unrestricted access to core business systems. A controlled layer sits between the assistant and company data, enforcing permissions, limiting access and requiring human approval for sensitive actions when needed.</p>
+<p class="about-p" style="color:var(--ink);font-weight:500">Over time, Tavien becomes more than an assistant. It becomes an intelligent operating layer across the business — helping people find information, monitor what matters and get work done.</p>
 </div>
-<p class="rv big" style="grid-column: 1 / -1; margin: 24px 0 0; font-size: 34px; font-weight: 500; letter-spacing: -1px">Tavien. <span style="color: #8A8F98">Ask your business anything.</span></p>
+<p class="big s rv" style="grid-column:1/-1;margin-top:24px">Tavien. <span class="dim">Ask your business anything.</span></p>
+</div>
 </section>
 
-<!-- FINAL CTA -->
-<section id="contact" style="margin-top: 220px; padding: 180px 120px; border-top: 1px solid #16171A; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 30px; position: relative">
-<div class="glow" style="position: absolute; left: 50%; top: 60px; width: 1100px; height: 520px; margin-left: -550px; border-radius: 50%; background: radial-gradient(closest-side, rgba(94,106,210,0.22), rgba(94,106,210,0) 70%)"></div>
-<h2 class="rv" style="margin: 0; max-width: 1000px; font-size: 72px; font-weight: 600; line-height: 1.0; letter-spacing: -3px; position: relative">What would you ask your business if you could ask it anything?</h2>
-<p class="rv" style="margin: 0; font-size: 19px; color: #8A8F98; position: relative">Tavien can start with one executive, one workflow or one business problem. We build from there.</p>
-<form class="rv2 contact-form" id="contactForm" name="contact" method="POST" action="https://formspree.io/f/mljdwkwj" style="position: relative; width: 100%; max-width: 620px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; text-align: left; margin-top: 12px">
+<!-- 10 CTA -->
+<section id="contact" class="sec dark contact">
+<div class="contact-glow"></div>
+<div class="wrap">
+<h2 class="h2 lg rv" style="font-size:clamp(34px,5.4vw,70px);line-height:1.02">What would you ask your business if you could ask it anything?</h2>
+<p class="lead rv" style="font-size:19px;--d:.06s">Tavien can start with one executive, one workflow or one business problem. We build from there.</p>
+<form class="contact-form rv" id="contactForm" name="contact" method="POST" action="https://formspree.io/f/mljdwkwj" style="--d:.1s">
 <input type="hidden" name="_subject" value="New Tavien inquiry">
 <input type="hidden" name="_next" value="/thanks.html">
-<p style="position: absolute; left: -9999px" aria-hidden="true"><label>Leave this empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+<p style="position:absolute;left:-9999px" aria-hidden="true"><label>Leave this empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
 <label class="fld">Name<input type="text" name="name" autocomplete="name" required></label>
 <label class="fld">Work email<input type="email" name="email" autocomplete="email" required></label>
-<label class="fld" style="grid-column: 1 / -1">Company<input type="text" name="company" autocomplete="organization"></label>
-<label class="fld" style="grid-column: 1 / -1">What would you ask your business?<textarea name="message" rows="4"></textarea></label>
-<button type="submit" id="contactSubmit" style="grid-column: 1 / -1; justify-self: start; padding: 14px 24px; border-radius: 10px; border: 0; background: #F7F8F8; color: #08090A; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 16px; cursor: pointer">Build your Tavien</button>
-<span id="contactStatus" role="status" style="grid-column: 1 / -1; font-size: 14px; color: #8A8F98"></span>
+<label class="fld full">Company<input type="text" name="company" autocomplete="organization"></label>
+<label class="fld full">What would you ask your business?<textarea name="message" rows="4"></textarea></label>
+<button type="submit" id="contactSubmit" class="btn btn-light full" style="justify-self:start;padding:15px 26px;font-size:16px">Build your Tavien</button>
+<span id="contactStatus" class="full" role="status"></span>
 </form>
+</div>
 </section>
+</main>
 
 <!-- FOOTER -->
-<footer style="margin-top: auto; padding: 64px 120px 56px; border-top: 1px solid #16171A; display: grid; grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr)); gap: 48px; font-size: 14px">
-<div style="display: flex; flex-direction: column; gap: 14px"><div style="display: flex; align-items: center; gap: 10px"><svg width="20" height="20" viewBox="0 0 22 22" fill="none" aria-hidden="true"><rect x="1" y="1" width="20" height="20" rx="6" stroke="#F7F8F8" stroke-width="1.6"></rect><path d="M6.5 7.5h9M11 7.5v8" stroke="#F7F8F8" stroke-width="1.8" stroke-linecap="round"></path></svg><span style="font-weight: 600">Tavien</span></div><span style="max-width: 320px; line-height: 1.6; color: #8A8F98">Your business already has the knowledge. Tavien gives you a way to talk to it.</span><span style="color: #62666D">Beirut, Lebanon · © 2026</span></div>
-<div style="display: flex; flex-direction: column; gap: 12px"><span style="font-weight: 500">Product</span><a href="#executives" style="color: #8A8F98">For executives</a><a href="#intelligence" style="color: #8A8F98">Company intelligence</a><a href="#automation" style="color: #8A8F98">Automation</a></div>
-<div style="display: flex; flex-direction: column; gap: 12px"><span style="font-weight: 500">Company</span><a href="#security" style="color: #8A8F98">Security</a><a href="#how" style="color: #8A8F98">How it works</a><a href="#about" style="color: #8A8F98">About</a></div>
-<div style="display: flex; flex-direction: column; gap: 12px"><span style="font-weight: 500">Contact</span><a href="#contact" style="color: #8A8F98">Build your Tavien</a><a href="#contact" style="color: #8A8F98">Talk to us</a><a href="mailto:talk@tavien.ai" style="color: #8A8F98">talk@tavien.ai</a></div>
-</footer>
+<footer class="site-footer">
+<div class="wrap">
+<div class="col"><a href="#top" class="brand" style="font-size:20px"><svg aria-hidden="true" style="width:26px;height:26px"><use href="#tv-mark"/></svg>Tavien</a><span class="tag">Your business already has the knowledge. Tavien gives you a way to talk to it.</span><span class="loc">Beirut, Lebanon · © 2026</span></div>
+<div class="col"><b>Product</b><a href="#executives">For executives</a><a href="#intelligence">Company intelligence</a><a href="#automation">Automation</a></div>
+<div class="col"><b>Company</b><a href="#security">Security</a><a href="#how">How it works</a><a href="#about">About</a></div>
+<div class="col"><b>Contact</b><a href="#contact">Build your Tavien</a><a href="#contact">Talk to us</a><a href="mailto:talk@tavien.ai">talk@tavien.ai</a></div>
 </div>
-<script>
-(function(){
-"use strict";
-var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+</footer>
 
-// Scroll-reveal for .rv / .rv2 / .tilt / .line / .glow
-var revealTargets = document.querySelectorAll(".rv, .rv2, .tilt, .line, .glow");
-if (reduceMotion || !("IntersectionObserver" in window)) {
- revealTargets.forEach(function(el){ el.classList.add("in"); });
-} else {
- var io = new IntersectionObserver(function(entries){
-  entries.forEach(function(entry){
-   if (entry.isIntersecting) {
-    entry.target.classList.add("in");
-    io.unobserve(entry.target);
-   }
-  });
- }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
- revealTargets.forEach(function(el){ io.observe(el); });
-}
-
-// Scroll progress bar
-var bar = document.getElementById("scrollbar");
-function updateBar(){
- var doc = document.documentElement;
- var max = doc.scrollHeight - doc.clientHeight;
- var pct = max > 0 ? (doc.scrollTop / max) * 100 : 0;
- bar.style.width = pct + "%";
-}
-window.addEventListener("scroll", updateBar, { passive: true });
-updateBar();
-
-// Active nav link while scrolling
-var navLinks = document.querySelectorAll('header nav a[href^="#"]');
-var sections = Array.prototype.map.call(navLinks, function(a){
- return document.getElementById(a.getAttribute("href").slice(1));
-}).filter(Boolean);
-if ("IntersectionObserver" in window && sections.length) {
- var navIo = new IntersectionObserver(function(entries){
-  entries.forEach(function(entry){
-   var link = document.querySelector('header nav a[href="#' + entry.target.id + '"]');
-   if (!link) return;
-   if (entry.isIntersecting) {
-    navLinks.forEach(function(a){ a.classList.remove("active"); });
-    link.classList.add("active");
-   }
-  });
- }, { rootMargin: "-45% 0px -50% 0px" });
- sections.forEach(function(s){ navIo.observe(s); });
-}
-
-// Mobile menu
-var navToggle = document.getElementById("navToggle");
-var mobileNav = document.getElementById("mobileNav");
-if (navToggle && mobileNav) {
- function closeMenu(){
-  mobileNav.classList.remove("open");
-  navToggle.setAttribute("aria-expanded", "false");
-  navToggle.setAttribute("aria-label", "Open menu");
- }
- navToggle.addEventListener("click", function(){
-  var isOpen = mobileNav.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  navToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
- });
- mobileNav.querySelectorAll("a").forEach(function(a){
-  a.addEventListener("click", closeMenu);
- });
- window.addEventListener("keydown", function(e){
-  if (e.key === "Escape") closeMenu();
- });
-}
-
-// Mock spotlight follows the cursor
-document.querySelectorAll(".mock").forEach(function(el){
- el.addEventListener("mousemove", function(e){
-  var r = el.getBoundingClientRect();
-  el.style.setProperty("--mx", ((e.clientX - r.left) / r.width) * 100 + "%");
-  el.style.setProperty("--my", ((e.clientY - r.top) / r.height) * 100 + "%");
- });
-});
-
-// Contact form: submit via fetch, show inline status, fall back to native submit
-var form = document.getElementById("contactForm");
-var status = document.getElementById("contactStatus");
-var submitBtn = document.getElementById("contactSubmit");
-if (form && window.fetch) {
- form.addEventListener("submit", function(e){
-  e.preventDefault();
-  submitBtn.disabled = true;
-  submitBtn.style.opacity = "0.6";
-  status.textContent = "Sending…";
-  status.style.color = "#8A8F98";
-  var data = new URLSearchParams(new FormData(form)).toString();
-  fetch(form.getAttribute("action"), {
-   method: "POST",
-   headers: { "Content-Type": "application/x-www-form-urlencoded", "Accept": "application/json" },
-   body: data
-  }).then(function(res){
-   if (res.ok) {
-    status.textContent = "Thanks — we received your message and will be in touch shortly.";
-    status.style.color = "#4CB782";
-    form.reset();
-   } else {
-    throw new Error("bad status");
-   }
-  }).catch(function(){
-   status.textContent = "Something went wrong sending that — please try again, or email us directly at talk@tavien.ai.";
-   status.style.color = "#EB5757";
-  }).finally(function(){
-   submitBtn.disabled = false;
-   submitBtn.style.opacity = "1";
-  });
- });
-}
-})();
-</script>
+<script src="assets/main.js"></script>
 </body>
 </html>
